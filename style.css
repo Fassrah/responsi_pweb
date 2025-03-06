@@ -1,12 +1,3 @@
-.home-page {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
 .home-page *,
 .home-page::before,
 .home-page::after,
@@ -19,6 +10,15 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+.home-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .home-page .main {
@@ -40,11 +40,11 @@
   height: 95px;
   background-color: #000;
   padding-top: 10px;
-  position: fixed; /* Navbar tetap di posisi atas */
-  top: 0; /* Menempel di bagian atas */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; /* Lebar penuh */
-  z-index: 999; /* Agar berada di atas elemen lain */
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar .container {
@@ -63,16 +63,16 @@
 .home-page .cn {
     width: 160px;
     height: 45px;
-    background: linear-gradient(135deg, #ffee32, #ffcc00); /* Gradasi warna */
+    background: linear-gradient(135deg, #ffee32, #ffcc00);
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 12px; /* Lebih membulat */
+    border-radius: 12px;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.4s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -89,13 +89,13 @@
 }
 
 .home-page .cn:hover::before {
-    left: 100%; /* Efek kilauan */
+    left: 100%;
 }
 
 .home-page .cn:hover {
-    transform: scale(1.1); /* Membesar 10% */
-    background: linear-gradient(135deg, #fff, #ffee32); /* Warna terbalik saat hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
+    transform: scale(1.1); 
+    background: linear-gradient(135deg, #fff, #ffee32);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .logo-image {
@@ -121,11 +121,10 @@
   font-family: Arial, sans-serif;
   height: 0px;
   font-weight: bold;
-  position: relative; /* Untuk efek animasi */
+  position: relative; 
   transition: color 0.4s ease-in-out;
 }
 
-/* Animasi Hover untuk Menu */
 .menu ul li a:not(.active):hover {
   color: #ffee32;
 }
@@ -208,7 +207,7 @@
   width: 100%;
   height: 100%;
   flex-direction: column;
-  min-height: 100vh; /* Pastikan halaman penuh */
+  min-height: 100vh; 
   overflow-x: hidden;
 }
 
@@ -220,12 +219,12 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  z-index: 1; /* Pastikan di atas carousel */
-  flex: 1; /* Membuat area utama fleksibel agar footer di bawah */
+  z-index: 1;
+  flex: 1; 
 }
 
 .about-page .hero {
-    background-image: url('About.jpg'); /* Ganti dengan URL gambar Anda */
+    background-image: url('About.jpg');
     width: 100%;
     height: 280px;
     display: flex;
@@ -266,27 +265,27 @@
 }
 
 .about-page .image-carousel {
-    overflow-x: auto; /* Mengaktifkan scroll horizontal */
-    white-space: nowrap; /* Menjaga gambar dalam satu baris */
+    overflow-x: auto;
+    white-space: nowrap; 
     margin-top: 250px;
-    padding-bottom: 20px; /* Ruang ekstra di bawah untuk scroll */
+    padding-bottom: 20px; 
 }
 
 .about-page .carousel-container {
-    display: inline-flex; /* Menjadikan gambar sejajar */
+    display: inline-flex;
     gap: 15px;
 }
 
 .about-page .carousel-container img {
-    width: 300px; /* Ukuran gambar */
-    height: auto; /* Menjaga proporsi */
-    border-radius: 10px; /* Opsional: membuat sudut membulat */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; /* Animasi lembut */
+    transition: transform 0.3s ease;
 }
 
 .about-page .carousel-container img:hover {
-    transform: scale(1.1); /* Membesar saat hover */
+    transform: scale(1.1);
 }
 
 .contact-page {
@@ -297,7 +296,7 @@
   width: 100%;
   height: 100%;
   flex-direction: column;
-  min-height: 100vh; /* Pastikan halaman penuh */
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -311,8 +310,8 @@
   justify-content: center;
   display: flex;
   position: relative;
-  z-index: 1; /* Pastikan di atas carousel */
-  flex: 1; /* Membuat area utama fleksibel agar footer di bawah */
+  z-index: 1;
+  flex: 1;
 }
 
 .contact-page .contact-box {
@@ -358,7 +357,6 @@
   z-index: 999;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .home-page .navbar .container,
   .home-page .content,
